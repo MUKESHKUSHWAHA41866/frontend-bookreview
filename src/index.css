@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.input-field {
+  @apply w-full py-2.5 px-4 pl-12 rounded-lg border border-gray-300 bg-white
+         text-sm text-gray-900 placeholder-gray-400
+         focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500
+         transition-all duration-200 ease-in-out;
+}
+
+.textarea-field {
+  @apply w-full py-2.5 px-4 pl-12 rounded-lg border border-gray-300 bg-white
+         text-sm text-gray-900 placeholder-gray-400
+         focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500
+         transition-all duration-200 ease-in-out;
+}
+/* .input-field {
+  @apply w-full py-2 px-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-400 focus:outline-none transition-all duration-300;
+} */
+
+.btn-primary {
+  @apply py-2 px-4 rounded-lg text-white font-semibold bg-indigo-600 hover:bg-indigo-500 transition duration-300;
+}
+
+.btn-secondary {
+  @apply py-2 px-4 rounded-lg text-primary-600 font-semibold border border-primary-600 hover:bg-primary-50 transition duration-300;
+}
+
+
+.card {
+  @apply bg-white p-6 rounded-2xl shadow-lg border border-gray-100;
+}
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+}
