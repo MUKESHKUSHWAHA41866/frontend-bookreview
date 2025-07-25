@@ -2,6 +2,23 @@
 
 A full-stack web application built with **React.js** and **Node.js** that allows users to discover, review, and rate books.
 
+for frontend 
+
+ download the file 
+
+ and  do npm i
+
+ npm run dev
+
+ for backend 
+ 
+ download the file 
+
+ do npm i
+
+ npm run dev
+
+
 ## 🚀 Features
 
 ### 🔐 Authentication
@@ -45,11 +62,9 @@ A full-stack web application built with **React.js** and **Node.js** that allows
 - **bcryptjs** for password hashing
 - **express-validator** for input validation
 
- for frontend 
-
- download the file 
-
- and  do npm i
+ 
+ 
+ 
 
 ## 🚀 Setup Instructions
  
