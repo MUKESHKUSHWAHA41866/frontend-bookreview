@@ -46,6 +46,8 @@ const Signup = () => {
       formData.email,
       formData.password
     );
+    console.log(result);
+    
 
     if (result.success) {
       navigate("/books");

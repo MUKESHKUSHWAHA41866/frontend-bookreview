@@ -69,6 +69,8 @@ export const AuthProvider = ({ children }) => {
   const login = async (email, password) => {
     try {
       const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/auth/login`, { email, password })
+      console.log(response);
+      
       const { token, user } = response.data
 
       localStorage.setItem("token", token)
@@ -87,10 +89,12 @@ export const AuthProvider = ({ children }) => {
   const signup = async (username, email, password) => {
     try {
       const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/api/auth/register`, { username, email, password })
+      console.log(response);
+      
       const { token, user } = response.data
 
       localStorage.setItem("token", token)
-      api.defaults.headers.common["Authorization"] = `Bearer ${token}`
+      axios.defaults.headers.common["Authorization"] = `Bearer ${token}`
       setUser(user)
 
       return { success: true }
