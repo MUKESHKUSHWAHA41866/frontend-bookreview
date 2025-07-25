@@ -45,58 +45,11 @@ A full-stack web application built with **React.js** and **Node.js** that allows
 - **bcryptjs** for password hashing
 - **express-validator** for input validation
 
-## 📁 Project Structure
+ for frontend 
 
-\`\`\`
-book-review-platform/
-├── server/
-│   ├── models/ input validation
+ download the file 
 
-## 📁 Project Structure
-
-\`\`\`
- 
-├── server/
-│   ├── models/
-│   │   ├── User.js
-│   │   ├── Book.js
-│   │   └── Review.js
-│   ├── routes/
-│   │   ├── auth.js
-│   │   ├── books.js
-│   │   └── reviews.js
-│   ├── middleware/
-│   │   └── auth.js
-│   ├── .env
-│   ├── package.json
-│   └── index.js
-
-
-
-├── client/
-│   ├── public/
-│   │   └── index.html
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Navbar.js
-│   │   │   ├── ProtectedRoute.js
-│   │   │   └── StarRating.js
-│   │   ├── pages/
-│   │   │   ├── Login.js
-│   │   │   ├── Signup.js
-│   │   │   ├── BookList.js
-│   │   │   ├── BookDetail.js
-│   │   │   └── AddBook.js
-│   │   ├── context/
-│   │   │   └── AuthContext.js
-│   │   ├── services/
-│   │   │   └── api.js
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   └── index.css
-│   └── package.json
-└── README.md
- 
+ and  do npm i
 
 ## 🚀 Setup Instructions
  
